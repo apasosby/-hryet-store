@@ -212,19 +212,16 @@ Solo se mostrará lo que tú decidas compartir.
 
 let escaneos = localStorage.getItem("escaneos");
 
-if(!escaneos){
-
-escaneos = 0;
-
+if (!escaneos) {
+  escaneos = 0;
 }
 
 escaneos++;
 
-localStorage.setItem("escaneos",escaneos);
+localStorage.setItem("escaneos", escaneos);
 
 document.getElementById("escaneos").innerHTML = "📱 " + escaneos;
-  </script>
-
+</script>
 </body>
 </html>
 
