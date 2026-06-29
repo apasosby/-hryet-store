@@ -1,1 +1,164 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crear Perfil | HRYET</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/qr.css">
+
+<style>
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+background:linear-gradient(180deg,#fffaf5,#f7efe6);
+display:flex;
+justify-content:center;
+padding:25px;
+}
+
+.card{
+width:100%;
+max-width:430px;
+background:white;
+border-radius:30px;
+padding:30px;
+box-shadow:0 20px 60px rgba(0,0,0,.08);
+animation:subir .8s ease;
+}
+
+@keyframes subir{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.logo{
+text-align:center;
+font-size:38px;
+margin-bottom:10px;
+}
+
+h1{
+text-align:center;
+margin:0;
+font-size:30px;
+}
+
+p{
+text-align:center;
+color:#666;
+line-height:1.6;
+margin-bottom:30px;
+}
+
+label{
+font-weight:600;
+display:block;
+margin-top:20px;
+margin-bottom:8px;
+}
+
+input,textarea{
+width:100%;
+padding:16px;
+border-radius:15px;
+border:1px solid #ddd;
+font-size:16px;
+box-sizing:border-box;
+}
+
+textarea{
+height:110px;
+resize:none;
+}
+
+button{
+margin-top:30px;
+width:100%;
+padding:18px;
+background:#8b5cf6;
+color:white;
+font-size:18px;
+border:none;
+border-radius:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.03);
+background:#7442ef;
+}
+
+small{
+display:block;
+text-align:center;
+margin-top:18px;
+color:#777;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="logo">🎉</div>
+
+<h1>¡Bienvenido a HRYET!</h1>
+
+<p>
+Tu prenda ya fue activada correctamente.<br>
+Ahora cuéntanos un poco sobre ti para que las personas puedan conocerte cuando escaneen tu QR.
+</p>
+
+<form>
+
+<label>📸 Foto de perfil</label>
+<input type="file">
+
+<label>👤 Nombre o apodo</label>
+<input type="text" placeholder="Ejemplo: HenrryG">
+
+<label>✨ Cuéntanos algo de ti</label>
+<textarea placeholder="Escribe una breve descripción..."></textarea>
+
+<label>📷 Agrega tus fotos favoritas</label>
+<input type="file" multiple>
+
+<label>📱 Instagram</label>
+<input type="text" placeholder="@usuario">
+
+<label>🎵 TikTok</label>
+<input type="text" placeholder="@usuario">
+
+<label>📘 Facebook</label>
+<input type="text" placeholder="Perfil de Facebook">
+
+<button type="submit">
+Guardar y continuar
+</button>
+
+<small>
+Podrás editar esta información cuando quieras.
+Solo se mostrará lo que tú decidas compartir.
+</small>
+
+</form>
+
+</div>
+
+</body>
+</html>
