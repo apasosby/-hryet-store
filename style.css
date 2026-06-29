@@ -242,3 +242,70 @@ opacity:.2;
 }
 
 }
+.collection{
+padding:80px 8%;
+background:#050505;
+}
+
+.collection h2{
+font-size:48px;
+text-align:center;
+margin-bottom:50px;
+color:white;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:35px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.1);
+border-radius:25px;
+overflow:hidden;
+transition:.4s;
+backdrop-filter:blur(20px);
+}
+
+.card:hover{
+transform:translateY(-15px) scale(1.03);
+box-shadow:0 0 40px rgba(176,0,255,.5);
+}
+
+.card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.card h3{
+padding:20px;
+font-size:26px;
+color:white;
+}
+
+.card p{
+padding:0 20px;
+font-size:22px;
+color:#b000ff;
+font-weight:bold;
+}
+
+.card button{
+margin:20px;
+padding:15px 30px;
+border:none;
+border-radius:50px;
+background:#b000ff;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+.card button:hover{
+background:white;
+color:#b000ff;
+}
