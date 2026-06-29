@@ -156,6 +156,13 @@ window.location.href="perfil.html";
 <body>
 
 <div class="card">
+<div class="numero" id="likes">❤️ 0</div>
+
+<div class="numero" id="visitas">👀 0</div>
+
+<div class="numero" id="escaneos">📱 0</div>
+
+Miembro HRYET #000001
 
 <div class="logo">🎉</div>
 
@@ -201,6 +208,23 @@ Solo se mostrará lo que tú decidas compartir.
 </form>
 
 </div>
+<script>
+
+let escaneos = localStorage.getItem("escaneos");
+
+if(!escaneos){
+
+escaneos = 0;
+
+}
+
+escaneos++;
+
+localStorage.setItem("escaneos",escaneos);
+
+document.getElementById("escaneos").innerHTML = "📱 " + escaneos;
+  </script>
 
 </body>
 </html>
+
