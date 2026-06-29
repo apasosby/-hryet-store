@@ -110,7 +110,49 @@ color:#777;
 </style>
 
 </head>
+<script>
 
+const formulario = document.querySelector("form");
+
+formulario.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const boton = document.querySelector("button");
+
+boton.innerHTML="🎉 Perfil guardado";
+
+boton.style.background="#27ae60";
+
+const mensaje=document.createElement("div");
+
+mensaje.innerHTML="✨ Preparando tu perfil...";
+
+mensaje.style.position="fixed";
+mensaje.style.top="0";
+mensaje.style.left="0";
+mensaje.style.width="100%";
+mensaje.style.height="100%";
+mensaje.style.background="rgba(255,255,255,.95)";
+mensaje.style.display="flex";
+mensaje.style.alignItems="center";
+mensaje.style.justifyContent="center";
+mensaje.style.fontSize="28px";
+mensaje.style.fontWeight="700";
+mensaje.style.zIndex="9999";
+mensaje.style.color="#7b2cff";
+
+document.body.appendChild(mensaje);
+
+setTimeout(()=>{
+
+window.location.href="perfil.html";
+
+},2500);
+
+});
+
+</script>
 <body>
 
 <div class="card">
