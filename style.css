@@ -195,3 +195,50 @@ display:none;
 }
 
 }
+.particle{
+
+position:absolute;
+
+width:4px;
+
+height:4px;
+
+background:#b000ff;
+
+border-radius:50%;
+
+opacity:.5;
+
+animation:floating 8s infinite ease-in-out;
+
+box-shadow:0 0 12px #b000ff;
+
+}
+
+@keyframes floating{
+
+0%{
+
+transform:translateY(0px);
+
+opacity:.2;
+
+}
+
+50%{
+
+transform:translateY(-80px);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+opacity:.2;
+
+}
+
+}
