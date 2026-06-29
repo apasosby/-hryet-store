@@ -64,3 +64,134 @@ nav a:hover{
     justify-content:space-between;
     padding:140px 8%;
 }
+.hero-left{
+    max-width:600px;
+    z-index:2;
+}
+
+.hero-left h1{
+    font-size:72px;
+    line-height:1;
+    font-weight:900;
+    text-transform:uppercase;
+    margin-bottom:20px;
+    text-shadow:0 0 35px rgba(176,0,255,.6);
+}
+.hero-left p{
+    font-size:20px;
+    color:#cfcfcf;
+    margin-bottom:35px;
+    line-height:1.7;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.buttons button{
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:700;
+    transition:.4s;
+}
+
+.buy{
+    background:#a000ff;
+    color:white;
+    box-shadow:0 0 30px #a000ff;
+}
+
+.buy:hover{
+    transform:translateY(-5px) scale(1.05);
+}
+
+.custom{
+    background:transparent;
+    color:white;
+    border:2px solid #a000ff;
+}
+
+.custom:hover{
+    background:#a000ff;
+}
+
+.hero-right{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-right img{
+    width:420px;
+    border-radius:25px;
+    animation:float 5s ease-in-out infinite;
+    box-shadow:0 0 60px rgba(176,0,255,.35);
+}
+
+.glow-ring{
+    position:absolute;
+    border:2px solid rgba(176,0,255,.45);
+    border-radius:50%;
+    animation:spin 18s linear infinite;
+}
+
+.ring1{
+    width:470px;
+    height:470px;
+}
+
+.ring2{
+    width:560px;
+    height:560px;
+    animation-direction:reverse;
+}
+
+.ring3{
+    width:650px;
+    height:650px;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-18px);
+    }
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-left h1{
+font-size:48px;
+}
+
+.hero-right img{
+width:280px;
+margin-top:40px;
+}
+
+nav{
+display:none;
+}
+
+}
